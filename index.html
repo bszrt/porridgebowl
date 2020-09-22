@@ -6,21 +6,15 @@
 	<link rel="stylesheet" type="text/css" href="opening.css">
 	<title></title>
 </head>
-<body onload = "drawBoard();">
+<body onload = "drawBoard(3);">
 
 <canvas id="tutorial" width=570 height=570></canvas>
 
 <div>
 
-	<p>Welcome to the porridge bowl, a weighted random go opening generator. It gives 3 or 4 random moves, weighted towards the corners; 3rd line is more likely than 4th, 4th more likely than 5th, etc. It will never give first or second line moves.</p>
+	<p>Welcome to the porridge bowl, a weighted random opening generator. It's meant to give somewhat playable openings, so it's weighted towards the corners. 3rd line is more likely than 4th, 4th more likely than 5th, etc. It will never give first or second line moves. Click the button to get a new one:</p>
 
-	<p>Set how hard it skews towards the corner here (the higher the skew, the less it allows centre moves):</p>
-
-	<input type="range" id="distance" min="0" max="13" value="6">
-
-	<p>Click the button to get a new opening:</p>
-
-	<button id="button" onclick = "drawBoard();">New opening</button>
+	<button onclick = "location.reload();">New opening</button>
 
 </div>
 
